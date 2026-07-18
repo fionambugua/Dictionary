@@ -48,3 +48,7 @@ body {
     cursor:pointer;
     transition:0.3s;
 }
+#searchButton:hover{
+    background:#ee1e9e;
+    transform:translateY(-5px);
+}
