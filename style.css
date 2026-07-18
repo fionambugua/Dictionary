@@ -4,7 +4,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(135deg, #4b6cb7, #182848);
+  background: linear-gradient(135deg, #992749, #182848);
   font-family: "Poppins", sans-serif;
 }
 #searchCard{
@@ -40,7 +40,7 @@ body {
     font-size:16px;
 }
 #searchButton{
-    background:#00b894;
+    background:#ce8adf;
     color:white;
     border:none;
     padding:0 20px;
