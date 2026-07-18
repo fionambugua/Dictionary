@@ -7,3 +7,13 @@ body {
   background: linear-gradient(135deg, #4b6cb7, #182848);
   font-family: "Poppins", sans-serif;
 }
+#searchCard{
+  width: 420px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(255,255,255,.2);
+  border-radius: 20px;
+  padding: 35px;
+  color: white;
+  box-shadow: 0 20px 40px rgba(0,0,0,.25);
+}
