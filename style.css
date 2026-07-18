@@ -27,3 +27,15 @@ body {
     color:#ddd;
     margin-bottom:30px;
 }
+#search{
+    display:flex;
+    gap:10px;
+}
+#searchInput{
+    flex:1;
+    padding:14px;
+    border:none;
+    border-radius:12px;
+    outline:none;
+    font-size:16px;
+}
