@@ -52,3 +52,12 @@ body {
     background:#ee1e9e;
     transform:translateY(-5px);
 }
+#result{
+    margin-top:25px;
+    background:rgba(255,255,255,.08);
+    padding:20px;
+    border-radius:15px;
+    border:1px solid rgba(255,255,255,.15);
+    min-height:100px;
+    color:#fff;
+}
