@@ -4,3 +4,14 @@ const result = document.getElementById("result");
 
 const API_URL = "https://api.dictionaryapi.dev/api/v2/entries/en/";
 
+searchForm.addEventListener("submit", searchWord);
+
+async function searchWord(event) {
+  event.preventDefault();
+  const word = searchInput.value.trim();
+
+  if (word === "") {
+    result.innerHTML = "<p>Please enter a word.</p>";
+    return;
+  }
+
