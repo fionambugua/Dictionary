@@ -14,4 +14,12 @@ async function searchWord(event) {
     result.innerHTML = "<p>Please enter a word.</p>";
     return;
   }
+ result.innerHTML = "<p>Searching...</p>";
+
+  try {
+    const response = await fetch(`${API_URL}${word}`);
+
+    if (!response.ok) {
+      throw new Error("Word not found");
+    }
 
