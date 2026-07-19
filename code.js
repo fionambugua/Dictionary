@@ -37,21 +37,21 @@ async function searchWord(event) {
 function displayWord(wordData) {
   const word = wordData.word;
   const phonetic = wordData.phonetic || "Not available";
-const meaning = wordData.meanings[0];
+  const meaning = wordData.meanings[0];
 
   const partOfSpeech = meaning.partOfSpeech;
 
   const definition = meaning.definitions[0].definition;
 
   const example = meaning.definitions[0].example || "No example available.";
-const synonyms =
+  const synonyms =
     meaning.synonyms.length > 0
       ? meaning.synonyms.join(", ")
       : "No synonyms available.";
 
   const audio = wordData.phonetics.find((item) => item.audio !== "");
 
-   result.innerHTML = `
+  result.innerHTML = `
         <h2>${word}</h2>
 
         <p><strong>Pronunciation:</strong> ${phonetic}</p>
@@ -63,3 +63,16 @@ const synonyms =
         <p><strong>Example:</strong><br>${example}</p>
 
         <p><strong>Synonyms:</strong><br>${synonyms}</p>
+
+         ${
+           audio
+             ? `
+            <audio controls>
+                <source src="${audio.audio}" type="audio/mpeg">
+                Your browser does not support audio.
+            </audio>
+        `
+             : "<p>No pronunciation audio available.</p>"
+         }
+    `;
+}
