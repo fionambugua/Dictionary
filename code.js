@@ -37,3 +37,10 @@ async function searchWord(event) {
 function displayWord(wordData) {
   const word = wordData.word;
   const phonetic = wordData.phonetic || "Not available";
+const meaning = wordData.meanings[0];
+
+  const partOfSpeech = meaning.partOfSpeech;
+
+  const definition = meaning.definitions[0].definition;
+
+  const example = meaning.definitions[0].example || "No example available.";
