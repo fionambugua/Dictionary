@@ -34,3 +34,6 @@ async function searchWord(event) {
   }
 }
 
+function displayWord(wordData) {
+  const word = wordData.word;
+  const phonetic = wordData.phonetic || "Not available";
