@@ -44,3 +44,9 @@ const meaning = wordData.meanings[0];
   const definition = meaning.definitions[0].definition;
 
   const example = meaning.definitions[0].example || "No example available.";
+const synonyms =
+    meaning.synonyms.length > 0
+      ? meaning.synonyms.join(", ")
+      : "No synonyms available.";
+
+  const audio = wordData.phonetics.find((item) => item.audio !== "");
