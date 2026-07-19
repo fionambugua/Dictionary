@@ -50,3 +50,16 @@ const synonyms =
       : "No synonyms available.";
 
   const audio = wordData.phonetics.find((item) => item.audio !== "");
+
+   result.innerHTML = `
+        <h2>${word}</h2>
+
+        <p><strong>Pronunciation:</strong> ${phonetic}</p>
+
+        <p><strong>Part of Speech:</strong> ${partOfSpeech}</p>
+
+        <p><strong>Definition:</strong><br>${definition}</p>
+
+        <p><strong>Example:</strong><br>${example}</p>
+
+        <p><strong>Synonyms:</strong><br>${synonyms}</p>
